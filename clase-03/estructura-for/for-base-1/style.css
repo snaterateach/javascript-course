@@ -1,0 +1,54 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.hero{
+  display: grid;
+  grid-template-columns: minmax(300px,2fr) 3fr;
+  grid-auto-rows: 400px;
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ajusta la imagen al espacio que ocupa. Para que no se distorsione la imagen */
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+}
+
+.info{
+  align-self: center;
+}
+
+.info-title {
+  color: #333;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+
+.info-subtitle {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+
+@media screen and (max-width: 768px){
+  .hero{
+    grid-template-columns: minmax(300px,500px);
+    justify-content: center;
+  }
+
+  .hero img{
+    display: none;
+  }
+
+}
