@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/starter-template/">
+
+    <title>Ejercicio 1 - DOM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand" href="#">Ejercicio 1 - DOM</span>
+        </div>
+    
+      </div>
+    </nav>
+
+   
+    <div class="container">
+        <div class="col-md-12" style="text-align: center;">
+            <h1>Práctica Acceso al DOM - 1</h1>
+        </div>
+      <div class="starter-template">
+        <!-- Ejercicios -->
+        <div class="col-md-12 general">
+              <div class="col-md-1"></div>
+              <div class="col-md-3 one">
+                    <h3>Ejercicio 1</h3>
+                            Obtener el nro de enlaces de la página.
+                            <ul>
+                                <li>
+                                    Mostrar el resultado en consola
+                                </li>
+                                <li>
+                                    Mostrar el resultado en un nuevo tag del html
+                                </li>
+                            </ul>
+    
+                        </div>
+                
+              <div class="col-md-3 two">
+                <h3>Ejercicio 2</h3>
+                        Obtener el número de enlaces del tercer párrafo
+                        <ul>
+                            <li>
+                                Mostrar el resultado en consola
+                            </li>
+                            <li>
+                                Mostrar el resultado en un nuevo tag del html
+                            </li>
+                        </ul>
+              </div>
+              <div class="col-md-3 three">
+                <h3>Ejercicio 3</h3>
+                Obtener el número de párrafos.
+                <ul>
+                    <li>
+                        Mostrar el resultado en consola
+                    </li>
+                    <li>
+                        Mostrar el resultado en un nuevo tag del html
+                    </li>
+                </ul>
+              </div>
+            <div class="col-md-1"></div>
+        </div>
+
+          <!-- Respuestas -->
+          <div class="col-md-12 answers">
+              <h2>Respuestas: </h2>     
+              <div>
+                  <h4>  
+                    Nro de enlaces de la página:  <span id="totalLinks">
+                      
+                    </span>
+                  </h4>
+                 
+              </div>
+              <div>
+                <h4>
+                   Número de enlaces del tercer párrafo:  <span id="paragrahLinks"></span>
+                </h4>
+                 
+              </div>
+              <div>
+                <h4>
+                   Número total de párrafos:  <span id="paragrahTotal"></span>
+                </h4>
+                 
+              </div>
+          </div>
+       
+
+     
+
+      <div class="lead lead-center">
+        <p>
+            Lorem ipsum dolor sit amet, 
+            <a href="http://prueba">consectetuer adipiscing elit</a>. 
+            Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, 
+            consequat congue, commodo nec, commodo ultricies, turpis. Quisque 
+            sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque 
+            massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam 
+            sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, 
+            semper quis, faucibus ut, rhoncus non, mi. 
+            <a href="http://prueba2">Fusce porta</a>. 
+            Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat 
+            arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer 
+            adipiscing elit. Duis scelerisque. Donec lacus neque, vehicula in, eleifend 
+            vitae, venenatis ac, felis. Donec arcu. Nam sed tortor nec ipsum aliquam 
+            ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer lacus.
+             Vestibulum venenatis erat eu odio. Praesent id metus.
+        </p>
+        <p>
+            Aenean at nisl. Maecenas egestas dapibus odio. Vestibulum ante ipsum primis 
+            in faucibus orci luctus et ultrices posuere cubilia Curae; Proin consequat 
+            auctor diam. 
+            <a href="http://prueba">Ut bibendum blandit est</a>. 
+            Curabitur vestibulum. Nunc malesuada porttitor sapien. Aenean a lacus et metus 
+            venenatis porta. Suspendisse cursus, sem non dapibus tincidunt, lorem magna 
+            porttitor felis, id sodales dolor dolor sed urna. Sed rutrum nulla vitae tellus.
+             Sed quis eros nec lectus tempor lacinia. Aliquam nec lectus nec neque aliquet 
+             dictum. Etiam 
+             <a href="http://prueba3">consequat sem quis massa</a>. 
+             Donec aliquam euismod diam. In magna massa, mattis id, pellentesque sit amet, 
+             porta sit amet, lectus. Curabitur posuere. Aliquam in elit. Fusce condimentum, 
+             arcu in scelerisque lobortis, ante arcu scelerisque mi, at cursus mi risus sed 
+             tellus.
+        </p>
+        <p>
+            Donec sagittis, nibh nec ullamcorper tristique, pede velit feugiat massa, 
+            at sollicitudin justo tellus vitae justo. Vestibulum aliquet, nulla sit amet 
+            imperdiet suscipit, nunc erat laoreet est, a 
+            <a href="http://prueba">aliquam leo odio sed sem</a>. 
+            Quisque eget eros vehicula diam euismod tristique. Ut dui. Donec in metus 
+            sed risus laoreet sollicitudin. Proin et nisi non arcu sodales hendrerit. 
+            In sem. Cras id augue eu lorem dictum interdum. Donec pretium. Proin 
+            <a href="http://prueba4">egestas</a> 
+            adipiscing ligula. Duis iaculis laoreet turpis. Mauris mollis est sit 
+            amet diam. Curabitur hendrerit, eros quis malesuada tristique, ipsum odio
+             euismod tortor, a vestibulum nisl mi at odio. 
+             <a href="http://prueba5">Sed non lectus non est pellentesque</a> 
+             auctor.
+        </p>
+    </div>
+      </div>
+    </div><!-- /.container -->
+
+  
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
