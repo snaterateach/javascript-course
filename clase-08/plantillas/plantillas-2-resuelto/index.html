@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/starter-template/">
+
+    <title>Ejercicio - TEMPLATE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand" href="#">Ejercicio - TEMPLATE</span>
+        </div>
+    
+      </div>
+    </nav>
+
+   
+    <div class="container">
+        <div class="col-md-12" style="text-align: center;">
+            <h1>Práctica Acceso al DOM</h1>
+        </div>
+
+        <div class="col-md-12 answers">
+          <h2>Se requiere: </h2>     
+          <div>
+            <p>
+              Completar el código JavaScript proporcionado para que cuando se pinche 
+              sobre el botón se muestre agrege un nuevo estudiante en la lista.
+              La acción de pinchar sobre un enlace forma parte de los "Eventos" de 
+              JavaScript que se ven en el siguiente capítulo. En este ejercicio, sólo 
+              se debe saber que al pinchar sobre el enlace, se ejecuta la función llamada
+              addNewStudent().
+            </p>
+         
+
+          </div>
+          
+      </div>
+
+      <div class="starter-template">
+
+      <div class="lead lead-center">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputName">Primer Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="nombre">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputLastName">Primer Apellido</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="apellido">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputAge">Nota</label>
+                <input type="text" class="form-control" id="inputNote" placeholder="note">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="inputAge">Click para agregar nuevo estudiante</label>
+                <a class="btn btn-success form-control" onclick="addNewStudent()">Agregar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Example row of columns -->
+          <h3>Listado de Estudiantes</h3>
+          <div class="row" id="students" style="background-color: beige;">
+            <div class="col-md-4">
+              <h2>Juan Perez</h2>
+              <p>Nota: 6</p>
+            </div>
+            <div class="col-md-4">
+              <h2>Pedro Martinez</h2>
+              <p>Nota: 9</p>
+            </div>
+            <div class="col-md-4">
+              <h2>Maximiliano Gutierrez</h2>
+              <p>Nota: 7</p>
+            </div>
+          </div>
+    
+    </div>
+      </div>
+    </div><!-- /.container -->
+
+  
+    
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
