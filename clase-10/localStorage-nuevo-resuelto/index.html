@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom.css">
+</head> 
+<body>
+    <div id="contenedor" class="container">
+        <header>
+            <h3>Agenda de contactos 
+            </h3>
+            <hr>
+        </header>
+
+        <form class="form-inline">
+            <div class="mb-3">
+                <span class="input-group-addon" id="basic-addon1">@nombreUsuario</span>
+                <input type="text" class="form-control" placeholder="Nombre" id="nombre" aria-describedby="basic-addon1">
+              </div>
+            
+              <div class="mb-3">
+                <span class="input-group-addon" id="basic-addon1">Nro. Teléfono </span>
+                <input type="text" class="form-control" placeholder="movil" id="movil" aria-describedby="basic-addon1">
+              </div>
+
+        </form>
+        <hr/>
+
+        <div id="gbotones" class="btn-group" role="group" aria-label="...">
+            <button type="button" id="guardar"  class="btn btn-success">
+                <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Guardar
+            </button>
+            <!--<button type="button" onclick="recuperarDato()" class="btn btn-success">
+                <span class="glyphicon glyphicon-floppy-open" aria-hidden="true"></span> Recuperar
+            </button>-->
+            <button type="button" id="eliminar"  class="btn btn-info">
+                <span class="glyphicon glyphicon-open" aria-hidden="true"></span> Eliminar
+            </button>
+            <button type="button" id="eliminarTodos"class="btn btn-danger">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Eliminar Todos
+            </button>
+        </div>
+
+       
+        <hr>
+
+        <!-- Listado de Contactos -->
+        <ul id="contactos" class="list-group">
+            <!--<li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Subheading</div>
+                  Cras justo odio
+                </div>
+                <span class="badge bg-primary rounded-pill">14</span>
+              </li>-->
+        </ul>
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html> 

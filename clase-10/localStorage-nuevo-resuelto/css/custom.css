@@ -1,0 +1,15 @@
+#contenedor {
+    width: 500px;
+}
+
+#gbotones {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.badge-info {
+    background-color: #5bc0de;
+}
