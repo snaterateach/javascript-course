@@ -1,0 +1,156 @@
+
+
+.hero{
+  display: grid;
+  grid-template-columns: minmax(300px,2fr) 3fr;
+  grid-auto-rows: 400px;
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ajusta la imagen al espacio que ocupa. Para que no se distorsione la imagen */
+}
+
+.info{
+  align-self: center;
+}
+
+.info-title {
+  color: #333;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+
+.info-subtitle {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.info-button {
+  border: none;
+  border-radius: 20px;
+  color: #333;
+  background-color: #fb8c00;
+  font-weight: bolder;
+  padding: 12px 24px;
+}
+
+.dishes{
+  margin: 100px 0;
+}
+
+.dishes-title{
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+
+.dishes-grid{
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 200px));
+  grid-auto-rows: 1fr;
+  gap: 25px;
+  justify-content: center;
+}
+
+.dishes-item{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dishes-item__big{
+  grid-area:  1 / 1 / 3 / 3; /* fila columna fila columna */
+}
+
+
+.menu{
+
+  margin-bottom: 100px;
+
+}
+
+.menu-grid{
+  display: grid;
+  justify-content: center;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  grid-template-rows: 1fr;
+}
+
+.menu-title{
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+
+.menu-grid-item {
+  margin: 0;
+  padding: 20px;
+  border-top-left-radius: 30px;
+
+}
+
+.menu-grid-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.oculto { 
+  display: none; 
+}
+
+.visible { 
+  display: inline; 
+}
+
+#rock, #paper, #scissor{
+  font-size: 24px;
+}
+
+.selected{
+
+  transition: all 1s ease;
+}
+
+.selected:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#result, #movement{
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+  .hero{
+    grid-template-columns: minmax(300px,500px);
+    justify-content: center;
+  }
+
+  .hero img{
+    display: none;
+  }
+
+  .dishes-grid{
+    grid-template-columns: repeat(auto-fit, minmax(75px, 150px));
+  }
+}
