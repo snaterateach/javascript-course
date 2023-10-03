@@ -1,0 +1,24 @@
+nav{
+    background-color: #26a69a;
+}
+.icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+      font-size: inherit;
+  }
+
+  .button-align{
+      text-align: center;
+  }
+
+  .margin-right{
+    margin-right: 3%;
+}
+
+.reloj{
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
