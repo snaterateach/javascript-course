@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workshop</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <svg id="Lager_1" width="50" height="50" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><circle cx="64" cy="64" r="50" style="fill:#F0DB4F;"/></g></g><g id="Layer_1_1_"><g><g><path d="M48.4,44.6h8.7v24.5c0,11-5.3,14.9-13.7,14.9c-2.1,0-4.7-0.3-6.4-0.9l1-7.1      c1.2,0.4,2.8,0.7,4.5,0.7c3.7,0,6-1.7,6-7.6L48.4,44.6L48.4,44.6z" style="fill:#323330;"/><path d="M64.8,74.4c2.3,1.2,6,2.4,9.7,2.4c4,0,6.1-1.7,6.1-4.3c0-2.4-1.8-3.8-6.5-5.4      c-6.4-2.3-10.7-5.9-10.7-11.6C63.4,49,69,44,78.1,44c4.4,0,7.6,0.9,9.9,2l-2,7c-1.5-0.7-4.3-1.8-8-1.8c-3.8,0-5.6,1.8-5.6,3.7      c0,2.5,2.1,3.6,7.2,5.5c6.8,2.5,10,6.1,10,11.6c0,6.5-4.9,12-15.6,12c-4.4,0-8.8-1.2-11-2.4L64.8,74.4z" style="fill:#323330;"/></g></g></g></g></svg>
+                <span style="width: 240px;">Workshop</span>
+              </a>
+        
+              <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 text-dark text-decoration-none" href="index.html">Home</a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="play.html">Example</a>
+              </nav>
+            </div>
+          
+          </header>
+    </div>
+
+
+    <!-- Begin page content -->
+   
+      <div class="container">
+        <section style="text-align: center;">
+          <h1 class="info-title">Piedra, Papel o Tijera - Juega con los Picapiedras</h1>
+        </section>
+        <div class="row align-items-md-stretch">
+          <!-- Instrucciones de Juego -->
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h2>Instrucciones Del Juego</h2>
+              <p>
+                ✊🏻 Piedra aplasta tijera
+              </p>
+              <p>
+                ✊🏻 Tijera corta papel
+              </p>
+              <p>
+                ✊🏻 Papel envuelve piedra
+              </p>
+              <p>
+                ✊🏻 Si ambos sacan lo mismo se juega otra vez
+              </p>
+              <p>
+                ✊🏻 Se repite el juego hasta que uno de los jugadores gana con 5 puntos
+              </p>
+            </div>
+          </div>
+          <!-- Tabla de resultados -->
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h2>Tabla de Resultados</h2>
+              <div class="container">
+                <div class="row">
+                  <div class="col-5">
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>Tú</b></li>
+                        <li class="list-group-item" >
+                            <span id="user_score">0</span>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="col" style="color: blue;font-size: 24px;">
+                    VS
+                  </div>
+                  <div class="col-5">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span id="machine_player">Sin seleccionar</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span id="machine_score">0</span>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Resultado de la Jugada-->
+                <div class="row" style="text-align: center;">
+                  <p id="movement"></p>
+                  <p id="result"></p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Loader -->
+        <div id="loading" style="margin-top: 10%;margin-bottom: 10%">
+          <div id="loader"></div>
+        </div>
+       
+        <!-- Listado de personajes -->
+        <section id="options">
+            <div class="container">
+                <h2 class="menu-title">Elije el personaje con el que quieres Jugar</h2>
+                <div class="row" id="listPlayers">
+                 
+                </div>
+            </div>
+        </section>
+      </div>
+
+      <!-- Personaje Seleccionado para Jugar -->
+      <div class="container">
+        <div class="row align-items-md-stretch player oculto" id="player" style="width: 1320px;">
+          <div class="row">
+            <!-- Seleccion -->
+            <div class="col">
+              <div class="card" style="width: 100%;">
+                <div class="card-header" id="playerName">
+                  
+                </div>
+                <div class="card-body">
+                  <div id="playerSelected">
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Opciones para Jugar -->
+            <div class="col">
+              <div class="card" style="width: 100%;">
+                <div class="card-header">
+                  <b>Selecciona una Opción</b>
+                </div>
+                <div class="row" style="text-align: center; padding: 8%;">
+                   <!-- Juega Piedra -->
+                  <div class="col">
+                    <figure class="figure selected" id="rock">
+                      <img src="./img/rock.png" class="figure-img img-fluid rounded" alt="...">
+                      <figcaption class="figure-caption"><b>Piedra</b></figcaption>
+                    </figure>
+
+                  </div>
+                   <!-- Juega papel -->
+                  <div class="col">
+                      <figure class="figure selected" id="paper">
+                        <img src="./img/paper.png" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption"><b>Papel</b></figcaption>
+                      </figure>
+                
+                  </div>
+                   <!-- Juega Tijera -->
+                  <div class="col">
+                    <figure class="figure selected" id="scissor">
+                      <img src="./img/scissors.png" class="figure-img img-fluid rounded" alt="...">
+                      <figcaption class="figure-caption"><b>Tijera</b></figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+    <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">&copy; 2023. Ing. Silma Natera</span>
+    </div>
+    </footer>
+    <script src="./js/ClassCharacter.js"></script>
+    <script src="data/characters.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
