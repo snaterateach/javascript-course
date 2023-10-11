@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Producto 1",
+    "descripcion": "Esta es la descripción del Producto 1.",
+    "precio": 19.99,
+    "categoria": "Electrónica",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "nombre": "Producto 2",
+    "descripcion": "Esta es la descripción del Producto 2.",
+    "precio": 24.99,
+    "categoria": "Ropa",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "nombre": "Producto 3",
+    "descripcion": "Esta es la descripción del Producto 3.",
+    "precio": 14.99,
+    "categoria": "Hogar",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "nombre": "Producto 4",
+    "descripcion": "Esta es la descripción del Producto 4.",
+    "precio": 29.99,
+    "categoria": "Electrónica",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "nombre": "Producto 5",
+    "descripcion": "Esta es la descripción del Producto 5.",
+    "precio": 9.99,
+    "categoria": "Hogar",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "nombre": "Producto 6",
+    "descripcion": "Esta es la descripción del Producto 6.",
+    "precio": 34.99,
+    "categoria": "Ropa",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "nombre": "Producto 7",
+    "descripcion": "Esta es la descripción del Producto 7.",
+    "precio": 19.99,
+    "categoria": "Electrónica",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "nombre": "Producto 8",
+    "descripcion": "Esta es la descripción del Producto 8.",
+    "precio": 15.99,
+    "categoria": "Ropa",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "nombre": "Producto 9",
+    "descripcion": "Esta es la descripción del Producto 9.",
+    "precio": 12.99,
+    "categoria": "Hogar",
+    "imagen": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "nombre": "Producto 10",
+    "descripcion": "Esta es la descripción del Producto 10.",
+    "precio": 39.99,
+    "categoria": "Electrónica",
+    "imagen": "https://via.placeholder.com/150"
+  }
+]

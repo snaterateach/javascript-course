@@ -1,0 +1,25 @@
+/* Estilo para las tarjetas de posts */
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Bordes más redondeados para hacerlas cuadradas */
+  padding: 20px; /* Más espacio para el contenido */
+  /* margin: 0 auto; */ /* Centrar horizontalmente */
+
+  width: 50%; /* Ocupar la mitad del ancho de la pantalla */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
+
+/* Estilo cuando se pasa el ratón sobre una tarjeta */
+.post-card:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
